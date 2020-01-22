@@ -1,0 +1,209 @@
+:root{
+    --mainWhite:#f2fdff;
+    --mainBlue:#3e92cc;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: var(--mainWhite);
+}
+
+/* ********************** Counter section***************** */
+/* .counter-box{
+    width: 40vw;
+    height: 60vh;
+    -webkit-box-shadow: 0px 9px 5px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 9px 5px -8px rgba(0,0,0,0.75);
+    box-shadow: 0px 9px 5px -8px rgba(0,0,0,0.75);
+    border: 1px solid white;
+    display:block;
+    padding: 1rem;
+    background: #494733;
+    text-align: center;
+
+}
+.counter-text{
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    color: white;
+}
+.counter-number{
+    font-size: 10rem;
+    padding: 0;
+}
+.btns{
+    margin: -3rem;
+}
+button{
+    border: none;
+    background: #2C3893;
+    color: white;
+    /* width: 3re;
+    height: 50px; */
+    /* text-align: center; 
+    display: inline-block;
+    margin-right: 2rem;
+    transition: all 2s;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 1rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    
+}
+
+button:hover{
+    background: #131B5C;
+} */
+/* End counter js */
+
+/* img{
+    width: 100%;
+} */
+/* slider style */
+/* .container{
+    position: relative;
+    min-height: 60vh;
+    background: url('../images/blue-car.jpg') center/cover fixed no-repeat;
+    width: 40rem;
+    border: 0.5rem solid var(--mainBlue);
+    border-radius: 0.5rem;
+    display: block;
+} */
+
+/* ********************** End counter section***************** */
+
+/* ********************** slider section***************** */
+/* .img-container{
+    min-height: 60vh;
+    background: url('../images/blue-car.jpg') center/cover fixed no-repeat;
+    width: 40rem;
+    border: 0.5rem solid var(--mainBlue);
+    border-radius: 0.5rem;
+    display: block; 
+   position: relative;
+}
+.btn-left{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background: var(--mainBlue) ;
+    color: var(--mainWhite) ;
+    transform: translate(-50%,-50%);
+    border: 0.3rem solid var(--mainBlue);
+    font-size: 1.2rem;
+    padding: 0.4rem;
+    border-radius: .2rem;
+    transition: all .5s;
+    text-align: center;
+}
+.btn-right{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    background: var(--mainBlue) ;
+    color: var(--mainWhite) ;
+    transform: translate(50%,-50%);
+    border: 0.3rem solid var(--mainBlue);
+    font-size: 1.2rem;
+    padding: 0.4rem;
+    border-radius: .2rem;
+    transition: all .5s;
+    text-align: center;
+}
+.btn-left:hover,.btn-right:hover{
+    background:var(--mainWhite)  ;
+    color: var(--mainBlue);
+
+} */
+
+/* ********************** End slider section***************** */
+
+/* ********************** Testimonial section***************** */
+.container{
+    width: 40vw;
+    /* height: 60vh; */
+    text-align: center;
+    display: block;
+    background: url("../images/travel-car.jpg")center/cover fixed no-repeat;
+    padding: 2rem 7rem;
+    position: absolute;
+    padding-bottom: 4rem;
+    
+}
+.title-heading{
+    color: #EF522E;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    
+
+}
+.title-subheading{
+    text-transform: uppercase;
+    font-size: 2.6rem;
+    color: white;
+    margin-bottom: 5rem;
+   
+}
+.customer-card{
+    border: 1px solid white;
+    position: relative;
+    
+    
+}
+.img-card{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 45%;
+  
+}
+.customer-name{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: white;
+    margin-top: 5rem;
+}
+.star-icon{
+    color: #EF522E;
+}
+.customer-card p{
+    color: white;
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    padding: 1rem 2rem;
+}
+.quote-icon{
+    color: #EF522E;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    display: block;
+
+}
+.prevBtn{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-150%,-50%);
+    color:#EF522E ;
+    border: 2px solid #EF522E;
+    font-size: 1.2rem;
+    padding: 1rem;
+    border-radius: 50%;
+}
+.nexBtn{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(150%,-50%);
+    color:#EF522E ;
+    border: 2px solid #EF522E;
+    font-size: 1.2rem;
+    padding: 1rem;
+    border-radius: 50%;
+}
+/* ********************** End testimonial  section***************** */
