@@ -1,14 +1,65 @@
-:root{
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* :root{
     --mainWhite:#f2fdff;
     --mainBlue:#3e92cc;
-}
+}*/
 body{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
     height: 100vh;
-    background: var(--mainWhite);
+    
+} 
+
+.calulator{
+    flex: 0 0 95%;
+}
+.screen{
+    width: 100%;
+    font-size: 7rem;
+    padding: 0.5rem;
+    background: rgb(41,41,56);
+    border: none;
+    color: white;
+   
+}
+.buttons{
+    display: flex;
+    flex-wrap: wrap;
+    transition: all 0.5s linear;
+}
+
+
+button{
+flex: 0 0 25%;
+border:1px solid black;
+transition: all 2s ease;
+}
+button:hover{
+    background: blue;
+}
+.btn-yellow{
+    background: rgb(245,146,62);
+    color: white;
+}
+.btn-grey{
+    background: rgb(224,224,224);
+    
+}
+.btn,.btn-equal,.btn-clear{
+    font-size: 4rem;
+}
+.btn-equal{
+    background: green;
+}
+.btn-clear{
+    background: red;
 }
 
 /* ********************** Counter section***************** */
@@ -123,10 +174,10 @@ button:hover{
 /* ********************** End slider section***************** */
 
 /* ********************** Testimonial section***************** */
-.container{
+/* .container{
     width: 40vw;
     /* height: 60vh; */
-    text-align: center;
+    /* text-align: center;
     display: block;
     background: url("../images/travel-car.jpg")center/cover fixed no-repeat;
     padding: 2rem 7rem;
@@ -205,5 +256,5 @@ button:hover{
     font-size: 1.2rem;
     padding: 1rem;
     border-radius: 50%;
-}
+}  */
 /* ********************** End testimonial  section***************** */

@@ -80,38 +80,38 @@ else if (counterValue <0){
 //     })();
                           /*    End slider js*************************************/    
 
-(function(){
+// (function(){
     //customers
-    let customers=[];
-    let index = 0;
+    // let customers=[];
+    // let index = 0;
 
     //object constructor function
-    function Customer (name,img,text){
-        this.name = name;
-        this.img = img;
-        this.text = text;
-    }
+    // function Customer (name,img,text){
+    //     this.name = name;
+    //     this.img = img;
+    //     this.text = text;
+    // }
     // create customer
-    function createCustomer(name,img,text){
+    // function createCustomer(name,img,text){
         // full img
-        let fullImg = `img/customer-${img}.jpg`;
+        // let fullImg = `img/customer-${img}.jpg`;
         // create a new customer instance
-        const customer = new Customer(name,fullImg,text);
+        // const customer = new Customer(name,fullImg,text);
         //add to all customers
-        customers.push(customer);
-    }
-    createCustomer('john',1,`Lorem Ipsum is simply dummy text of the printing 
-    and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
-   `);
-   createCustomer('bob',2,`Lorem Ipsum is simply dummy text of the printing 
-   and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
-  `);
-  createCustomer('peter',3,`Lorem Ipsum is simply dummy text of the printing 
-  and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
- `);
- createCustomer('alice',4,`Lorem Ipsum is simply dummy text of the printing 
- and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
-`);
+//         customers.push(customer);
+//     }
+//     createCustomer('john',1,`Lorem Ipsum is simply dummy text of the printing 
+//     and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+//    `);
+//    createCustomer('bob',2,`Lorem Ipsum is simply dummy text of the printing 
+//    and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+//   `);
+//   createCustomer('peter',3,`Lorem Ipsum is simply dummy text of the printing 
+//   and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+//  `);
+//  createCustomer('alice',4,`Lorem Ipsum is simply dummy text of the printing 
+//  and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+// `);
 // document.querySelectorAll('.btn').forEach(function(item){
 //     item.addEventListener('click',function(event){
 //         event.preventDefault();
@@ -141,3 +141,33 @@ else if (counterValue <0){
 
 
                             /***  Testimonial section*************************************/  
+
+// /***  Calculator section*************************************/  
+(function(){
+    const btns = document.querySelectorAll(".btn");
+    const screen = document.querySelector(".screen");
+    const equalBtn = document.querySelector(".btn-equal");
+    const clearBtn = document.querySelector(".btn-clear");
+ 
+ btns.forEach(function(btn){
+     btn.addEventListener("click",function(){
+         let number = btn.getAttribute("data-num");
+         screen.value += number;
+     });
+
+    equalBtn.addEventListener("click",function(){
+        if(screen.value === ""){
+            screen.value = `Please enter a value`;
+        }else{ 
+            let value =eval(screen.value);
+            screen.value = value;
+        }
+       
+    });
+    clearBtn.addEventListener("click",function(){
+        screen.value = "";
+            });
+        
+ });
+})();
+ /***  End calculator section*************************************/  
