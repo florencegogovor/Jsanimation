@@ -14,6 +14,7 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background: #000;
     
 } 
 
@@ -262,4 +263,11 @@ button:hover{
 } */
 
 /* ********************** End Calculator  section***************** */
+/* ********************** Digital section***************** */
 
+#clock{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 5rem;
+    color: #32cd32;
+}
+/* ********************** End Calculator  section***************** */
