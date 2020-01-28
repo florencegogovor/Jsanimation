@@ -143,33 +143,33 @@ else if (counterValue <0){
                             /***  Testimonial section*************************************/  
 
 // /***  Calculator section*************************************/  
-// (function(){
-//     const btns = document.querySelectorAll(".btn");
-//     const screen = document.querySelector(".screen");
-//     const equalBtn = document.querySelector(".btn-equal");
-//     const clearBtn = document.querySelector(".btn-clear");
+(function(){
+    const btns = document.querySelectorAll(".btn");
+    const screen = document.querySelector(".screen");
+    const equalBtn = document.querySelector(".btn-equal");
+    const clearBtn = document.querySelector(".btn-clear");
  
-//  btns.forEach(function(btn){
-//      btn.addEventListener("click",function(){
-//          let number = btn.getAttribute("data-num");
-//          screen.value += number;
-//      });
+ btns.forEach(function(btn){
+     btn.addEventListener("click",function(){
+         let number = btn.getAttribute("data-num");
+         screen.value += number;
+     });
 
-//     equalBtn.addEventListener("click",function(){
-//         if(screen.value === ""){
-//             screen.value = `Please enter a value`;
-//         }else{ 
-//             let value = eval(screen.value);
-//             screen.value = value;
-//         }
+    equalBtn.addEventListener("click",function(){
+        if(screen.value === ""){
+            screen.value = `Please enter a value`;
+        }else{ 
+            let value = eval(screen.value);
+            screen.value = value;
+        }
        
-//     });
-//     clearBtn.addEventListener("click",function(){
-//         screen.value = "";
-//             });
+    });
+    clearBtn.addEventListener("click",function(){
+        screen.value = "";
+            });
         
-//  });
-// })();
+ });
+})();
  /***  End calculator section*************************************/  
   /*******  Digital section*************************************/  
 
@@ -223,7 +223,9 @@ else if (counterValue <0){
      
    
 
-    const navbarBtn = document.querySelector(".navbar_btn");
+   (function(){
+
+   const navbarBtn = document.querySelector(".navbar_btn");
      const navbarLinks = document.querySelector(".navbar_links");
 
      navbarBtn.addEventListener("click",function(){
@@ -235,7 +237,7 @@ else if (counterValue <0){
              navbarLinks.classList.add('navbar-collapse');
              navbarBtn.classList.add("change");
          }
-     })
-    
+     });
+    })();
 
         /******* End Navbar section*************************************/
