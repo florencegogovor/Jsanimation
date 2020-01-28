@@ -9,14 +9,14 @@
     --mainWhite:#f2fdff;
     --mainBlue:#3e92cc;
 }*/
-body{
-    /* display: flex; */
-    /* justify-content: ; */
-    /* align-items: center;
-    height: 100vh;
+ /* body{ 
+    display: flex; 
+    justify-content: center;
+     align-items: center; */
+    /* height: 100vh;
     background: #000; */
     
-} 
+/* }   */
 
 
 /* ********************** Counter section***************** */
@@ -217,7 +217,7 @@ button:hover{
 /* ********************** End testimonial  section***************** */
 /* ********************** Calculator section***************** */
 
- .calulator{
+ /* .calulator{
     flex: 0 0 50%;
 }
 .screen{
@@ -260,7 +260,7 @@ button:hover{
 }
 .btn-clear{
     background: red;
-} 
+}  */
 
 /* ********************** End Calculator  section***************** */
 /* ********************** Digital section***************** */
@@ -273,7 +273,7 @@ button:hover{
 /* ********************** End Calculator  section***************** */
 
 /* ********************** NavBar section***************** */
-.navbar_header{
+/* .navbar_header{
     background: #545454;
     display:flex;
     justify-content: space-between;
@@ -306,7 +306,7 @@ button:hover{
     list-style-type: none;
     transition: all 2s ease;
     /*  */
-    height: 0;
+    /* height: 0;
     overflow: hidden;
 }
 .navbar-collapse{
@@ -324,9 +324,9 @@ button:hover{
 }
 .navbar_single_link:hover {
     padding-left: 1.5rem;
-    background: #545454;
+    background: #545454; */ 
     /* transform: translateX(30px); */
-}
+/* } */
 /* .navbar_single_link:hover i{
     transform: translateX(30px);
 } */
@@ -335,14 +335,65 @@ button:hover{
     min-height: calc(50vh - 91.8px);
     background: url("../img/header-bcg.jpeg")center/cover no-repeat;
 } */
-.lightbox-container{
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: 999;
-    background: rgba(0,0,0,0.6);
-    display: none;
-}
+
 /* ********************** End NavBar section***************** */
+
+/* ****************** Tip calculator ***************8*/
+
+.max-height {
+    min-height: 100vh;
+  }
+  :root {
+    --lightBlue: #86bbd8;
+    --darkBlue: #336699;
+    --mainWhite: #f5f5f5;
+    --mainDark: #333333;
+  }
+  
+  body {
+    background: var(--lightBlue);
+  }
+  .card-title {
+    background: var(--darkBlue);
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    color: var(--mainWhite);
+  }
+  .card {
+    border: none !important;
+    border-radius: 0.5rem !important;
+  }
+  
+  .bill-icon,
+  .user-icon {
+    background: var(--darkBlue) !important;
+    color: var(--mainWhite);
+  }
+  .submitBtn {
+    background: var(--darkBlue);
+    font-size: 1.2rem;
+    color: var(--mainWhite);
+  }
+  
+  .submitBtn:hover {
+    background: var(--lightBlue);
+    color: var(--mainDark);
+  }
+  /* feedback */
+  .feedback {
+    display: none;
+  }
+  .loader {
+    display: none;
+  }
+  
+  .results {
+    display: none;
+  }
+  
+  .showItem {
+    display: block;
+  }
+  
+  
+/* ****************** Tip calculator ***************8*/
